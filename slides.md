@@ -414,6 +414,16 @@ const { x, y } = useMouse()
 
 </VClicks>
 
+<Code class="mt-8" v-click file="index.md">
+
+```md
+::alert{type="warning"}
+The **alert** component.
+::
+```
+
+</Code>
+
 ---
 
 # Nitro(pack)
