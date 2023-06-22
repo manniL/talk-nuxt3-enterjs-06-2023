@@ -1,6 +1,14 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
+  routeRules: {
+    '/api/jokes/random': {
+      swr: 60
+    },
+    '/api/jokes/recent': {
+      swr: true
+    }
+  },
   nitro: {
     storage: {
       kv: {
