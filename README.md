@@ -1,11 +1,3 @@
-# Welcome to [Slidev](https://github.com/slidevjs/slidev)!
+# Nuxt.js - Livecoding
 
-To start the slide show:
-
-- `npm install`
-- `npm run dev`
-- visit http://localhost:3030
-
-Edit the [slides.md](./slides.md) to see the changes.
-
-Learn more about Slidev on [documentations](https://sli.dev/).
+During the talk, we built an application which fetches jokes via [icanhazdadjoke](https://icanhazdadjoke.com/api), utilizes Nitro as Backend-for-Frontend, caches the responses and integrates Cloudflares KV-Store via [unstorage](https://unstorage.unjs.io/drivers/cloudflare-kv-http)https://unstorage.unjs.io/drivers/cloudflare-kv-http
