@@ -2,11 +2,11 @@ export async function addRecentJoke (joke: Joke): Promise<Joke[]> {
   const jokes = await getRecentJokes()
 
   // Keep ten jokes around
-  jokes.slice(0,10)
-  jokes.unshift(joke)
-  
-  await setRecentJokes(jokes)
-  return jokes
+  const newJokes = jokes.slice(0, 9)
+  newJokes.unshift(joke)
+
+  await setRecentJokes(newJokes)
+  return newJokes
 }
 
 export async function getRecentJokes (): Promise<Joke[]> {

@@ -6,8 +6,8 @@ const { data, pending } = useLazyFetch('/api/jokes/recent')
     <h1>Hey enterJS!</h1>
     <h2>Recent Jokes</h2>
     <template v-if="!pending">
-        <ol v-for="joke in data">
-            <NuxtLink :to="`/jokes/${joke.id}`">
+        <ol v-for="(joke, i) in data">
+           {{ i + 1 }}. <NuxtLink :to="`/jokes/${joke.id}`">
                 Joke #{{ joke.id }}
             </NuxtLink>
         </ol>
