@@ -601,3 +601,5 @@ layout: intro
 # Slides / Repo
 
 * Slides: [https://lichter.link/ejs-23/](https://lichter.link/ejs-23/)
+
+<!-- TODO: Server components, Extends, nuxt image -->
